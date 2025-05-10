@@ -10,16 +10,4 @@ def solve():
         
         if (index, current_sum) in dp:
             return dp[(index, current_sum)]
-        
-        include = calculate(index + 1, (current_sum + a[index]) % n)
-        exclude = calculate(index + 1, (current_sum - a[index]) % n)
-        
-        dp[(index, current_sum)] = include or exclude
-        return dp[(index, current_sum)]
-    
-    if calculate(1, a[0] % n) or calculate(1, -a[0] % n):
-        print("YES")
-    else:
-        print("NO")
-
-solve()
+      
