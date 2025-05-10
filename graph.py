@@ -21,5 +21,8 @@ if __name__ == "__main__":
     g.add_edge(1, 4)
     g.add_edge(2, 3)
     g.add_edge(3, 4)
+    g.add_edge(3, 4)
+    g.add_edge(3, 4)
+
 
     g.print_graph()
